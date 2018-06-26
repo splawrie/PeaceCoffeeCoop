@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="page-header">
+    <h1>Peace Coffee Member Access</h1>
+  </div>
+  <h4>Welcome to the Peace Coffee Member homepage.</h4>
+  <p>Here you will find the links necessary to make payments and place orders. </p>
+  <hr>
+
+  <span>
+    <h5> View past payment history and upcoming payments</h5>
+    <span>
+      <span>
+        <a href="/api/payments/{{id}}" class="btn btn-members managePayments" data-id="{{id}}">
+          <i class="fa fa-dollar-sign" aria-hidden="true"></i> Manage Payments
+        </a>
+      </span>
+      <br>
+      <br>
+      <span>
+        <h5> Order Coffee and Products</h5>
+        <span>
+          <a href="/api/products/{{id}}" class="btn btn-members orderProduct" data-id="{{id}}">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Order Product
+          </a>
+        </span>
+        <br>
+        <br>
+        <span>
+        <h5> Add New Coffee Products</h5>
+        <span>
+          <a href="/api/addProduct/{{id}}" class="btn btn-members orderProduct">
+            <i class="fas fa-clipboard-list" aria-hidden="true"></i> Add Product
+          </a>
+        </span>
+      </span>
+    </span>
+  </span>
+</div>
+
+<!-- Custom scripts for login -->
+<script src="../assets/js/members.js"></script>

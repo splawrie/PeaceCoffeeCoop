@@ -1,0 +1,18 @@
+The create table and insert data statements are included 
+in the seeds scripts.
+
+Run the PeaceCoffee database scripts in the following order:
+
+1.  userseeds.sql
+2.  productseeds.sql
+3.  memberseeds.sql
+4.  ordersummaryseeds.sql
+5.  supplierseeds.sql
+
+Load in this order because members table needs to user_id from the user table.
+
+order_summary needs the member_id from the members table and the
+product_id from the products table.
+
+suppliers table needs the product_id from the product table,
+the user_id from the users table.
